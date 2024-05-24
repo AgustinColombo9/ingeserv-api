@@ -1,0 +1,42 @@
+
+            <!DOCTYPE html>
+            <html lang="es">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Documento PDF</title>
+                <style>
+                /* Estilos CSS */
+                </style>
+            </head>
+            <body>
+                <div class="header">
+                <div class="company-info">
+                    <!-- Aquí puedes agregar el logo, nombre de la empresa, correo y teléfono de contacto -->
+                </div>
+                <div class="contact-info">
+                    <h2>Tester</h2>
+                    <p>Afiliado: Testeando</p>
+                    <p>Asunto: Esto es una prueba update</p>
+                    <p>Observación: undefined</p>
+                    <p>Fecha: 29-02-2024</p>
+                </div>
+                </div>
+                <div class="content" id="productList">
+                <!-- Lista de productos -->
+                
+                    <div class="product">
+                    <img src="data:image/jpeg;base64,[object Object]" alt="Imagen del producto" width="50" height="50">
+                    <div class="product-details">
+                        <h3>Concentrador Portatil </h3>
+                        <p>Modelo: LG103</p>
+                        <p>Marca: LOVE GO</p>
+                        <p>Precio de venta: 15000</p>
+                        <p>Precio de alquiler: 0</p>
+                    </div>
+                    </div>
+                
+                </div>
+            </body>
+            </html>
+            

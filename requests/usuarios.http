@@ -1,0 +1,244 @@
+@api = http://localhost:3000/usuarios
+@api2 = http://localhost:3000/turnos
+
+@api3 = http://localhost:3000/productos
+
+@api4 = http://localhost:3000/clientes
+
+@api5 = http://localhost:3000/transacciones
+
+@api6 = http://localhost:3000/categorias
+
+@api7 = http://localhost:3000/tipoidentificacion
+
+@api8 = http://localhost:3000/situacionIVA
+
+@api9 = http://localhost:3000/provincia
+
+@api10 = http://localhost:3000/ciudad
+
+@api11 = http://localhost:3000/rubro
+
+@api12 = http://localhost:3000/items
+
+@api13 = http://localhost:3000/marca
+
+@api14 = http://localhost:3000/categoria
+
+@api16 = http://localhost:3000/ofertas
+
+@api17 = http://localhost:3000/pedidos
+
+@api18 = http://localhost:3000/services
+
+@api19 = http://localhost:3000/chat
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "usuario_nombre": "test 3",
+    "usuario_password": "test7531",
+    "usuario_tipo_id": 1
+}
+
+###
+GET {{api}}/3
+
+###
+DELETE {{api}}/10007
+
+###
+GET {{api}}/count
+
+###
+PUT {{api}}/10007 
+Content-Type: application/json 
+
+{
+    "usuario_nombre": "TEST 2", 
+    "usuario_password": "TEST9876",
+    "usuario_tipo_id": "3",
+    "usuario_status": "1"
+}
+
+###
+post {{api}}/login
+Content-Type: application/json
+
+{
+    "usuario_nombre": "user@gmail.com",
+    "usuario_password": "12345"
+}
+
+###
+GET {{api2}}/getTurnos
+
+###
+GET {{api3}}/getProductos
+
+###
+GET {{api3}}/getDetalleVentasMes
+
+###
+GET {{api6}}/getCategoriasVentasMes
+
+###
+GET {{api4}}/getClientes
+
+###
+GET {{api4}}/getClienteId/4
+
+###
+GET {{api5}}/getTransacciones
+
+###
+GET {{api2}}/getTurnosByEspecialistaId/1
+
+###
+GET {{api7}}/getTipoIdentificaciones
+
+###
+GET {{api8}}/getSituacionesIVA
+
+###
+GET {{api9}}/getProvincias
+
+###
+GET {{api10}}/getCiudades
+
+###
+GET {{api10}}/getCiudadesProvinciaId/1
+
+###
+GET {{api11}}/getRubros
+
+
+
+###
+PUT {{api3}}/addProducto 
+Content-Type: application/json 
+
+{
+    "producto_codigo": "00004", 
+    "producto_descripcion": "TEST",
+    "producto_categoria_id": 2,
+    "producto_rating": 2,
+    "producto_alta": null,
+    "producto_observacion": "",
+    "producto_imnage": ""
+}
+
+###
+GET {{api3}}/getPricesByProductoId/1 
+
+###
+PUT {{api3}}/editPrecioProducto/1 
+Content-Type: application/json 
+
+{
+    "productoprecio_fecha": "2022/12/31", 
+    "productoprecio_importe": 10000 
+}
+
+###
+GET {{api12}}/getItemsSucursalId/1 
+
+###
+GET {{api12}}/getItemsSucursalId2/1
+
+###
+GET {{api12}}/getItems
+
+###
+GET {{api}}/getRepositories
+
+###
+GET {{api13}}/getMarcas
+
+###
+GET {{api14}}/getCategorias
+
+###
+GET {{api14}}/getCategoriasRubroId/1
+
+###
+GET {{api3}}/getProductosCategoriaId/25
+
+###
+GET {{api3}}/getProductosCategoriaId/1
+
+###
+GET {{api3}}/getProductoId/1/1
+
+###
+PUT {{api3}}/newProducto 
+Content-Type: application/json 
+
+{
+    "producto_titulo": "Prueba de alta", 
+    "producto_descripcion": "Esto es una prueba de alta", 
+    "producto_detalle": "Ingrese detalles del producto alta", 
+    "producto_marca": "ALTA", 
+    "producto_categoria_id": 1, 
+    "producto_imagen": "file:///data/user/0/host.exp.exponent/cache/ExperienceData/%2540anonymous%252Fofertas-app-2bbc64db-5527-43e7-b831-9909d025302d/ImagePicker/b0656bda-a80f-43f1-a0ba-571796083f2b.jpeg", 
+    "producto_precio": 12000, 
+    "producto_descuento": 0, 
+    "producto_activo": 1
+}
+
+### 
+PUT {{api18}}/newService 
+Content-Type: application/json
+
+{
+    "service_producto_id":1,
+    "service_cliente_id":2,
+    "service_numero_orden":"111",
+    "service_fecha":"2023-12-04",
+    "service_empleado_id":10002,
+    "service_observacion":"Testeando ",
+    "service_precio":null
+}
+
+###
+PUT {{api3}}/updateProducto/2 
+Content-Type: application/json 
+
+{
+    "producto_titulo": "Probando desde API 2", 
+    "producto_descripcion": "Esto es una prueba", 
+    "producto_detalle": "Ingrese detalles del producto", 
+    "producto_marca": "FALTA INPUT", 
+    "producto_categoria_id": 1, 
+    "producto_imagen": "file:///data/user/0/host.exp.exponent/cache/ExperienceData/%2540anonymous%252Fofertas-app-2bbc64db-5527-43e7-b831-9909d025302d/ImagePicker/b0656bda-a80f-43f1-a0ba-571796083f2b.jpeg", 
+    "producto_precio": 120, 
+    "producto_descuento": 0, 
+    "producto_activo": 1
+}
+
+###
+GET {{api17}}/getPedidoEstados
+
+### 
+GET {{api17}}/getPedidosUsuarioEstadoId/4/2
+
+### 
+GET {{api17}}/getPedidosUsuario/4
+
+###
+GET {{api3}}/getProductos
+
+###
+GET {{api4}}/getClienteEstados
+
+###
+GET {{api3}}/getProductoEquipoDetalleClienteId/1
+
+###
+GET {{api4}}/getClientesEmpleado
+
+###
+GET {{api19}}/getChatsUsuarioId/10002
+
