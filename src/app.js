@@ -58,7 +58,7 @@ app.use(express.urlencoded({extended: false}));
 // permite reciber formatos JSON
 app.use(express.json());
 //app.use (morgan('dev')); 
-//app.use(fileUpload());
+//app.use(fileUpload()); 
 
 //export const directorioFacturas = path.join(__dirname, 'facturas_app')
 export const directorioFacturas = process.env.FOLDER_FACTURAS;

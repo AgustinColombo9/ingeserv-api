@@ -30,13 +30,13 @@ await mssql.connect(configDB1);
 
 const dbSettings = {
     user: "admin", //config.dbUser, 
-    password: "carp1234", //config.dbPassword, 
+    password: "Carp12345", //config.dbPassword, 
     //server: "localhost", //config.dbServer,
     server: 'gtinformatica.ddns.net',
     database: "INGESERV", //config.dbDatabase, 
     options: {
         encrypt: true, 
-        trustServerCertificate: true,
+        trustServerCertificate: true, 
     }    
 };
 

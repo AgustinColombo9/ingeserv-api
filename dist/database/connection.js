@@ -49,7 +49,7 @@ var dbSettings = {
   //config.dbPassword, 
   server: "localhost",
   //config.dbServer,
-  //    server: 'gtinformatica.ddns.net',
+  //server: 'gtinformatica.ddns.net:8500',
   database: "INGESERV",
   //config.dbDatabase, 
   options: {
